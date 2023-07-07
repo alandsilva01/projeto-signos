@@ -16,8 +16,8 @@ div#boxsig {
     overflow: hidden;
 
     background-color: white;
-    width: 50vw;
-    height: 50vh;
+    width: 80vw;
+    height: 80vh;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
 
@@ -31,7 +31,9 @@ div#boxsig {
 }
 
 div#boxsig input,
-div#boxsig button {
+div#boxsig button,
+div#boxsig h1, label, input, #res {
+    padding: 5px;
     width: 80%;
     max-width: 300px;
 }
