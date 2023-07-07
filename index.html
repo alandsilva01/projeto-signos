@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signos</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="script.js">
+    
 </head>
 <body>
-    <form>
-        <h1>Qual seu signo?</h1>
-        <label for="text">Sua data de nascimento: </label>
-        <input id="text" type="date">
-        <button onclick="enviar">enviar</button>
-    </form>
+    <fieldset>
+        <legend>Signo</legend>
+        <form>
+            <h1>Qual seu signo?</h1>
+            <label for="data-nascimento">Sua data de nascimento: </label>
+            <input id="data-nascimento" type="date">
+            <button onclick="enviar()">enviar</button>
+        </form>
+    </fieldset>
+    
     <div id="res"></div>
+
+<script src="script.js"></script>
 </body>
+
 </html>
