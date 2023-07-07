@@ -32,5 +32,6 @@ function enviar() {
       } else {
         signo = "Data de nascimento inválida.";
       }
-      document.getElementById("res").innerHTML = "Seu signo é" + signo  ;
+
+      document.getElementById("res").innerHTML = "Seu signo é: " + signo  ;
 }

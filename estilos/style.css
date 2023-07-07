@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+div#boxsig {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#boxsig input,
+div#boxsig button {
+    width: 80%;
+    max-width: 300px;
+}
+
+div#boxsig button {
+    margin-top: 20px;
+}
