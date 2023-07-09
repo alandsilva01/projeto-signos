@@ -33,5 +33,10 @@ function enviar() {
         signo = "Data de nascimento inválida.";
       }
 
-      document.getElementById("res").innerHTML = "Seu signo é: <br><br>" + signo  ;
+      document.getElementById("res").innerHTML = "Seu signo é:<span class='link-signo' onclick='redirecionar()'>" + signo + "</span>";
 }
+
+function redirecionar() {
+    // Código para redirecionar para outra seção ou página
+    window.location.href = "escorpiao.html"; // Substitua com o ID da seção desejada
+  }
