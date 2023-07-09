@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: cadetblue;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imagens/backsig.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 div#boxsig {
@@ -15,7 +21,7 @@ div#boxsig {
     transform: translate(-50%, -50%);
     overflow: hidden;
 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.562);
     width: 80vw;
     height: 80vh;
     border-radius: 20px;
@@ -33,11 +39,36 @@ div#boxsig {
 div#boxsig input,
 div#boxsig button,
 div#boxsig h1, label, input, #res {
+    text-align: center;
     padding: 5px;
     width: 80%;
     max-width: 300px;
 }
 
-div#boxsig button {
+div#boxsig button, input {
+    color: blueviolet;
+    border-radius: 10px;
     margin-top: 20px;
+}
+
+div#boxsig h1 {
+    color: blueviolet;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px black;
+}
+
+div#boxsig label {
+    font-size: 1.5em;
+}
+
+div#boxsig button:hover {
+    background-color: rgb(27, 9, 43);
+}
+
+div#res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    font-size: 1.6em;
 }
