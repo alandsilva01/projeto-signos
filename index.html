@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
     
 </head>
+<header>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <menu id="itens">
+        <ul>
+            <li class="menu-item"><a href="#"><img src="imagens/aquario.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/peixes.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/aries.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/touro.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/gemeos.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/cancer.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/leo.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/virgem.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/libra.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/escorpiao.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/sagitario.png" alt=""></a></li>
+            <li class="menu-item"><a href="#"><img src="imagens/capricornio.png" alt=""></a></li>
+        </ul>
+    </menu>
+</header>
 <body>
     <div id="boxsig">
         <h1>Qual seu signo?</h1>
@@ -17,6 +38,29 @@
     </div>
 
 <script src="script.js"></script>
+<script>
+    function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+        } else {
+            itens.style.display = 'none'
+        }
+    }
+
+    function clickMenu() {
+var burguerIcon = document.getElementById('burguer');
+var itensMenu = document.getElementById('itens');
+
+if (itensMenu.style.display === 'block') {
+itensMenu.style.display = 'none';
+burguerIcon.textContent = 'menu'; 
+} else {
+itensMenu.style.display = 'block';
+burguerIcon.textContent = 'close'; 
+}
+}
+
+</script>
 </body>
 
 </html>

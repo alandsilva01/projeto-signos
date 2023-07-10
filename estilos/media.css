@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    
+    #burguer{
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul {
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-around;
+        overflow-x: auto;
+      }
+      
+      .menu-item {
+        flex: 0 0 auto;
+        margin-right: 10px;
+      }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    menu > ul > li > a {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    menu > ul > li > a:hover {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    menu > ul > li > a > img {
+        width: 3vw;
+        margin: 10px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px black;
+        box-sizing: border-box;
+    }
+
+    main {
+        width: 768px;
+    }
+}

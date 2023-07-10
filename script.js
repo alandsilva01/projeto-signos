@@ -37,6 +37,8 @@ function enviar() {
 }
 
 function redirecionar() {
-    // Código para redirecionar para outra seção ou página
-    window.location.href = "escorpiao.html"; // Substitua com o ID da seção desejada
+    
+    if (signo === "Escorpião"){
+        window.location.href = "escorpiao.html";
+    } 
   }
