@@ -102,6 +102,7 @@ div#boxsig h1, label, input, #res {
 
 div#boxsig button, input {
     color: blueviolet;
+    font-size: 1.5em;
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -117,7 +118,8 @@ div#boxsig label {
 }
 
 div#boxsig button:hover {
-    background-color: rgb(27, 9, 43);
+    background-color: rgb(55, 19, 87);
+    color: white;
 }
 
 div#res {
