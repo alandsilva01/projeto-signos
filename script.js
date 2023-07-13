@@ -24,7 +24,7 @@ function enviar() {
       } else if ((mes === 9 && dia >= 23) || (mes === 10 && dia <= 22)) {
         signo = "Libra";
       } else if ((mes === 10 && dia >= 23) || (mes === 11 && dia <= 21)) {
-        signo = "Escorpião";
+        signo = "Escorpião♏";
       } else if ((mes === 11 && dia >= 22) || (mes === 12 && dia <= 21)) {
         signo = "Sagitário";
       } else if ((mes === 12 && dia >= 22) || (mes === 1 && dia <= 19)) {
@@ -34,11 +34,51 @@ function enviar() {
       }
 
       document.getElementById("res").innerHTML = "Seu signo é:<span class='link-signo' onclick='redirecionar()'>" + signo + "</span>";
+      document.getElementById("res").dataset.signo = signo;
 }
 
 function redirecionar() {
-    
-    if (signo === "Escorpião"){
-        window.location.href = "escorpiao.html";
-    } 
+  var signo = document.getElementById("res").dataset.signo;
+
+  switch (signo) {
+    case "Aquário":
+      window.location.href = "aquario.html";
+      break;
+    case "Peixes":
+      window.location.href = "peixes.html";
+      break;
+    case "Áries":
+      window.location.href = "aries.html";
+      break;
+    case "Touro":
+      window.location.href = "touro.html";
+      break;
+    case "Gêmeos":
+      window.location.href = "gemeos.html";
+      break;
+    case "Câncer":
+      window.location.href = "cancer.html";
+      break;
+    case "Leão":
+      window.location.href = "leao.html";
+      break;
+    case "Virgem":
+      window.location.href = "virgem.html";
+      break;
+    case "Libra":
+      window.location.href = "libra.html";
+      break;
+    case "Escorpião":
+      window.location.href = "escorpiao.html";
+      break;
+    case "Sagitário":
+      window.location.href = "sagitario.html";
+      break;
+    case "Capricórnio":
+      window.location.href = "capricornio.html";
+      break;
+    default:
+      // Lidar com um caso inválido ou padrão
+      break;
   }
+}
