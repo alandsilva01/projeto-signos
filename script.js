@@ -33,7 +33,7 @@ function enviar() {
         signo = "Data de nascimento inválida.☹";
       }
 
-      document.getElementById("res").innerHTML = "Seu signo é:<span class='link-signo' onclick='redirecionar()'>" + signo + "</span>";
+      document.getElementById("res").innerHTML = "<span class= 'textores'>Seu signo é:</span><span class='link-signo' onclick='redirecionar()'>" + signo + "</span>";
       document.getElementById("res").dataset.signo = signo;
 }
 
