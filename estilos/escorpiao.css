@@ -35,6 +35,10 @@ header > h1 {
     font-size: 7vw;
 }
 
+header > h2 {
+    border: 1px solid white;
+}
+
 header > p {
     padding-bottom: 50px;
 }
