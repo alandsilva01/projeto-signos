@@ -37,7 +37,7 @@ body {
 }
 
 #burguer:hover {
-    background-color: rgb(60, 4, 97);
+    background-color: rgb(56, 5, 90);
     color: rgb(156, 99, 231);
 }
 
@@ -88,7 +88,7 @@ div#boxsig {
     left: 51%;
     overflow: hidden;
 
-    background-color: rgba(255, 255, 255, 0.562);
+    background-color: rgba(255, 255, 255, 0.479);
     width: 80vw;
     height: 70vh;
     border-radius: 20px;
